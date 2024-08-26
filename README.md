@@ -1,7 +1,6 @@
-<h1 align="center">Gravity UI example</h1>
+<h1 align="center">TODO</h1>
 
-This is a blank README file that you can customize at your needs.\
-Describe your project, how it works and how to contribute to it.
+Link: [TODO APP](https://66cc5e35e850fcd6bd446406--merry-sable-c869bf.netlify.app/)
 
 # 🚀 Available Scripts
 

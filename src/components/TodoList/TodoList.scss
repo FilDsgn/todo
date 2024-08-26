@@ -1,0 +1,56 @@
+$block: '.todo-list';
+
+#{$block} {
+  padding: 10px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 450px;
+
+  &__form {
+    display: flex;
+    gap: 6px;
+    width: 100%;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__message {
+    margin-top: 18px;
+  }
+
+  &__bottom-container {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__counter {
+    padding: 0 12px;
+    max-width: 125px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #{$block} {
+    height: 500px;
+    
+    &__bottom-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "name": "todo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@gravity-ui/icons": "^2.10.0",
+    "@gravity-ui/uikit": "^5.31.2",
+    "@reduxjs/toolkit": "^2.2.7",
+    "bem-cn-lite": "^4.1.0",
+    "cra-template-gravity-ui-pure": "1.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
+    "react-scripts": "5.0.1",
+    "redux": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prepare": "husky install",
+    "lint:js": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint:styles": "stylelint '{styles,src}/**/*.scss'",
+    "lint:prettier": "prettier --check '**/*.md'",
+    "lint": "npm run lint:js && npm run lint:styles && npm run lint:prettier"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    "extends @gravity-ui/browserslist-config"
+  ],
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@gravity-ui/browserslist-config": "^4.3.0",
+    "@gravity-ui/eslint-config": "^3.2.0",
+    "@gravity-ui/prettier-config": "^1.1.0",
+    "@gravity-ui/stylelint-config": "^4.0.1",
+    "@gravity-ui/tsconfig": "^1.0.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.15",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-redux": "^7.1.33",
+    "eslint": "^8.57.0",
+    "husky": "^8.0.3",
+    "jest": "^27.5.1",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "sass-loader": "^13.3.3",
+    "stylelint": "^15.11.0",
+    "typescript": "^5.5.4"
+  },
+  "lint-staged": {
+    "*.{scss}": [
+      "stylelint --fix --quiet"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix --quiet",
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "overrides": {
+    "typescript": "^5.5.4"
+  }
+}
